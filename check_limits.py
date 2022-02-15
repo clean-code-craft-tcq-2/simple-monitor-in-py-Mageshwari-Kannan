@@ -1,5 +1,5 @@
 soc_level_state = {[0,20] : 'LOW_SOC_BREACH', [21,24] : 'LOW_SOC_WARNING', [24,75] : 'NORMAL', [76,80] : 'HIGH_SOC_WARNING', [81,100] : 'HIGH_SOC_BREACH' }
-temperature_level_state = {[0,0] : 'LOW_SOC_BREACH', [0,2.25] : 'LOW_TEMPERATURE_WARNING', (2.25,42.75) : 'NORMAL', [42.75,45] : 'HIGH_TEMPERATURE_WARNING', [45,100] : 'HIGH_TEMPERATURE_BREACH'}
+temperature_level_state = {[0,0] : 'LOW_TEMPERATURE_BREACH', [0,2.25] : 'LOW_TEMPERATURE_WARNING', (2.25,42.75) : 'NORMAL', [42.75,45] : 'HIGH_TEMPERATURE_WARNING', [45,100] : 'HIGH_TEMPERATURE_BREACH'}
 charge_rate_state = {(-100,0] : 'LOW_CHARGE_BREACH', [0,0.2] : 'LOW_CHARGE_WARNING', (0.2,0.8] : 'NORMAL', [76,80] : 'HIGH_CHARGE_WARNING', [81,100] : 'HIGH_CHARGE_BREACH' }
 
 def temperature_check(temperature):
